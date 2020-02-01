@@ -1,0 +1,63 @@
+
+relative imports should only be either ./ or ../
+
+research how restProps works with typescript
+https://www.youtube.com/watch?v=Z5iWr6Srsj8
+https://www.typescriptlang.org/index.html
+
+primary vs ghost button
+
+set up linter
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+containers
+
+  browse
+    fetch most recent vistas on render
+    update list depending on filters
+    list and card view
+    ability to search within search
+    sort, filter by
+      newest
+      oldest
+      closest
+      furthest
+
+    search section
+      keyword text field
+      category dropdown
+
+    sort (if no filters, sorted alphabetically by name)
+      closest
+        requires location
+        modal opens asking for location
+          if not signed in, location search
+          if signed in, text field or saved location
+      newest (disabled if oldest selected)
+      oldest (disabled if newest selected)
+      rating (high to low)
+      rating (low to high)
+      category, alphabetical (disabled if search was executed with category)
+
+  landing
+    slideshow, search, and recent vistas
+    slideshow wont render until photos are cached
+    search is stripped down version of search page form
+    recent vistas card list
+  
+  user
+  
+  vista
+  
+  store
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+user can set their location
+need a component that takes location input (town, zip, coordinates)
+
+get photos, coordinates from reddit
+
+should a container hold the view
+or should it just be for mapping props and dispatchers

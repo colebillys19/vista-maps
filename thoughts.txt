@@ -1,0 +1,7 @@
+when thinking about app architecture, containers vs components, important to consider what components will get what props/dispatchers
+components that get similar props/dispatchers shopuld be grouped together under common container
+
+with react boilerplate substates are only available if their corresponding containers are mounted
+use a dedicated container that's always mounted for data you want to always be available (auth flag)
+
+ability to search within search as a UX talking point
