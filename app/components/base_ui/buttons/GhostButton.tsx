@@ -7,10 +7,10 @@ import React from 'react';
 
 import PrimaryButton from './PrimaryButton';
 
-interface Props { variant: string }
+interface Props {}
 
 function GhostButton(props: Props) {
-  return <PrimaryButton variant="outlined" {...props} />;
+  return <PrimaryButton {...props} />;
 }
 
 export default GhostButton;

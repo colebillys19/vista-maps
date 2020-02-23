@@ -6,8 +6,8 @@
 import React, { memo } from 'react';
 
 import Slideshow from '../Slideshow/Loadable';
-import SearchForm from '../base_ui/SearchForm';
-import VistaListLanding from '../VistaListLanding/Loadable';
+import SearchForm from '../SearchForm';
+// import VistaListLanding from '../VistaList/Landing/Loadable';
 import { LandingWrapper } from './styledComponents';
 
 interface Props {}
@@ -17,7 +17,6 @@ function LandingPage(props: Props) {
     <LandingWrapper>
       <Slideshow />
       <SearchForm />
-      <VistaListLanding />
     </LandingWrapper>
   );
 }
