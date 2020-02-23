@@ -3,29 +3,57 @@
  * CategorySelect
  *
  */
-import React, { memo } from 'react';
-import Input from '@material-ui/core/Input';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import React, {
+  memo,
+  Fragment,
+  useRef, 
+  useState,
+} from 'react';
 import MenuOpen from '@material-ui/icons/MenuOpen';
+import Modal from '@material-ui/core/Modal';
 
 
-import { StyledInput } from './styledComponents';
+import { CategoryButton } from './styledComponents';
 
-// interface Props {}
+// type Props {}
 
 function CategorySelect() {
-  const endAdornment = (
-    <InputAdornment position="end">
-      <MenuOpen />
-    </InputAdornment>
-  );
+  const [open, setOpen] = useState(false);
+  const [category, setCategory] = useState('All Categories');
 
+  const anchorRef = useRef<HTMLButtonElement>(null);
+
+  const handleToggle = () => {
+    setOpen(prevOpen => !prevOpen);
+  };
+
+  const handleClose = (event: React.MouseEvent<EventTarget>) => {
+    if (
+      anchorRef.current &&
+      anchorRef.current.contains(event.target as HTMLElement)
+    ) {
+      return;
+    }
+    setOpen(false);
+  };
   return (
-    <StyledInput
-      pointerEvents="none"
-      endAdornment={endAdornment}
-      value="All Categories"
-    />
+    <Fragment>
+      <CategoryButton
+        endIcon={<MenuOpen />}
+        fullWidth
+        onClick={handleToggle}
+      >
+        {category}
+      </CategoryButton>
+      <Modal
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+        open={open}
+        onClose={handleClose}
+      >
+        <div>Hello</div>
+      </Modal>
+    </Fragment>
   );
 }
 

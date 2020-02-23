@@ -11,7 +11,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import { LinksWrapper } from './styledComponents';
 
-// interface Props { isLoggedIn?: boolean; }
+// type Props { isLoggedIn?: boolean; }
 
 function Links() {
   return (

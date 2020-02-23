@@ -4,13 +4,14 @@
  *
  */
 import React from 'react';
+import { ButtonProps } from '@material-ui/core/Button';
 
 import PrimaryButton from './PrimaryButton';
 
-interface Props {}
+type Props = ButtonProps;
 
 function GhostButton(props: Props) {
-  return <PrimaryButton {...props} />;
+  return <PrimaryButton variant="outlined" {...props} />;
 }
 
 export default GhostButton;

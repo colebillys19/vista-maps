@@ -19,9 +19,9 @@ const stateSelector = createStructuredSelector({
   vista: makeSelectVista(),
 });
 
-interface Props {}
+// type Props {}
 
-function Vista(props: Props) {
+function Vista() {
   // Warning: Add your key to RootState in types/index.d.ts file
   useInjectReducer({ key: 'vista', reducer: reducer });
   useInjectSaga({ key: 'vista', saga: saga });

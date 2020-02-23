@@ -7,9 +7,9 @@ import React, { memo } from 'react';
 
 // import styled from 'styles/styled-components';
 
-interface Props {}
+// type Props {}
 
-function Footer(props: Props) {
+function Footer() {
   return  <div/>;
 }
 

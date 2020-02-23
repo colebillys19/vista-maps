@@ -19,9 +19,9 @@ const stateSelector = createStructuredSelector({
   user: makeSelectUser(),
 });
 
-interface Props {}
+// type Props {}
 
-function User(props: Props) {
+function User() {
   // Warning: Add your key to RootState in types/index.d.ts file
   useInjectReducer({ key: 'user', reducer: reducer });
   useInjectSaga({ key: 'user', saga: saga });

@@ -7,9 +7,9 @@ import React, { memo } from 'react';
 
 // import styled from 'styles/styled-components';
 
-interface Props {}
+// type Props {}
 
-function NotFoundPage(props: Props) {
+function NotFoundPage() {
   return <div>Page Not Found</div>;
 }
 

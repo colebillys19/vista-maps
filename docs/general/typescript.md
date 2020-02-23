@@ -194,11 +194,11 @@ export default combineReducers<ContainerState, ContainerActions>({
 Declare types of all the props of this component
 
 ```typescript
-interface Props {
+// type Props {
   a_internal_prop: string;
 }
 
-export function HomePage(props: Props) {
+export function HomePage() {
   // ...
 }
 ```
@@ -206,7 +206,7 @@ export function HomePage(props: Props) {
 Type-safe hooks are extremely straight forward and easy
 
 ```typescript
-export function HomePage(props: Props) {
+export function HomePage() {
   const [someValue, setSomeValue] = useState<boolean>(true);
   // ...
 }

@@ -21,9 +21,9 @@ const stateSelector = createStructuredSelector({
   landing: makeSelectLanding(),
 });
 
-interface Props {}
+// type Props {}
 
-function Landing(props: Props) {
+function Landing() {
   // Warning: Add your key to RootState in types/index.d.ts file
   useInjectReducer({ key: 'landing', reducer: reducer });
   useInjectSaga({ key: 'landing', saga: saga });

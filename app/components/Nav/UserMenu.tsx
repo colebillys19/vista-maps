@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import AccountIcon from '@material-ui/icons/AccountCircle';
 import Modal from '@material-ui/core/Modal';
 
-// interface Props { isLoggedIn?: boolean; }
+// type Props { isLoggedIn?: boolean; }
 
 function UserMenu() {
   const [open, setOpen] = useState(false);

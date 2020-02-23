@@ -11,7 +11,7 @@ import Links from './Links';
 import UserMenu from './UserMenu';
 import { StyledSection, StyledToolbar } from './styledComponents';
 
-// interface Props { isLoggedIn?: boolean; }
+// type Props { isLoggedIn?: boolean; }
 
 function Nav() {
   return (

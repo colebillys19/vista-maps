@@ -10,9 +10,9 @@ import SearchForm from '../SearchForm';
 // import VistaListLanding from '../VistaList/Landing/Loadable';
 import { LandingWrapper } from './styledComponents';
 
-interface Props {}
+// type Props {}
 
-function LandingPage(props: Props) {
+function LandingPage() {
   return (
     <LandingWrapper>
       <Slideshow />

@@ -41,9 +41,9 @@ const stateSelector = createStructuredSelector({
 });
 {{/if}}
 
-interface Props {}
+// type Props {}
 
-function {{ properCase name }}(props: Props) {
+function {{ properCase name }}() {
   {{#if wantActionsAndReducer}}
   // Warning: Add your key to RootState in types/index.d.ts file
   useInjectReducer({ key: '{{ camelCase name }}', reducer: reducer });

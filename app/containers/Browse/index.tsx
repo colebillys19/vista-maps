@@ -19,9 +19,9 @@ const stateSelector = createStructuredSelector({
   browse: makeSelectBrowse(),
 });
 
-interface Props {}
+// type Props {}
 
-function Browse(props: Props) {
+function Browse() {
   // Warning: Add your key to RootState in types/index.d.ts file
   useInjectReducer({ key: 'browse', reducer: reducer });
   useInjectSaga({ key: 'browse', saga: saga });

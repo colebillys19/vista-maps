@@ -14,13 +14,13 @@ import {
   StyledInputLabel,
 } from './styledComponents';
 
-// interface Props {}
+// type Props {}
 
 function SearchForm() {
   return (
     <StyledSection>
       <StyledInputLabel htmlFor="">Search Vistas</StyledInputLabel>
-      <StyledInput pointerEvents="auto" placeholder="Enter Keyword..." />
+      <StyledInput color="primary" placeholder="Enter Keyword..." />
       <CategorySelect />
       <PrimaryButton>Search</PrimaryButton>
       <GhostButton>Browse</GhostButton>
