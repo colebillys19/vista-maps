@@ -6,7 +6,7 @@
 import React, {
   memo,
   Fragment,
-  useRef, 
+  useRef,
   useState,
 } from 'react';
 import MenuOpen from '@material-ui/icons/MenuOpen';
