@@ -27,7 +27,7 @@ function Store(props: Props) {
 
   const { store } = useSelector(stateSelector);
   const dispatch = useDispatch();
-  return <div></div>;
+  return  <div/>;
 }
 
 export default Store;

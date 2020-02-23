@@ -10,7 +10,7 @@ import React, { memo } from 'react';
 interface Props {}
 
 function VistaListBrowse(props: Props) {
-  return <div></div>;
+  return  <div/>;
 }
 
 export default memo(VistaListBrowse);

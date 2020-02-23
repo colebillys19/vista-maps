@@ -16,7 +16,7 @@ export const StyledInput = styled(Input)`
   padding: 0.7rem 1.2rem;
   pointer-events: ${(props: StyledInputProps) => props.pointerEvents};
   width: 100%;
-` as ComponentType<StyledInputProps>
+` as ComponentType<StyledInputProps>;
 
 export const StyledSection = styled.section`
   display: flex;
