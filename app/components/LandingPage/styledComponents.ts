@@ -6,7 +6,3 @@ export const LandingWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
-// export const StyledInput = styled(Input)`
-//   font-size: 1.6rem;
-// `;

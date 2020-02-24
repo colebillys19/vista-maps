@@ -6,16 +6,6 @@ import InputLabel from '@material-ui/core/InputLabel';
 import muiTheme from '../../resources/muiTheme';
 import { PRIMARY_BACKGROUND } from '../../resources/styleConstants';
 
-export const StyledInput = styled(Input)`
-  background-color: ${PRIMARY_BACKGROUND};
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 0.1rem;
-  min-height: 5.1rem;
-  padding: 0.7rem 1.2rem;
-  width: 100%;
-`;
-
 export const CategoryButton = styled(Button)`
   background-color: #e9e8f2 !important;
   border-bottom: 1px solid #86868b;
@@ -30,10 +20,20 @@ export const CategoryButton = styled(Button)`
   }
 `;
 
-export const StyledSection = styled.section`
+export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  margin: 3rem 0 3rem;
+  margin: 3rem 0;
+  width: 100%;
+`;
+
+export const StyledInput = styled(Input)`
+  background-color: ${PRIMARY_BACKGROUND};
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+  min-height: 5.1rem;
+  padding: 0.7rem 1.2rem;
   width: 100%;
 `;
 

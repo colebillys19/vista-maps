@@ -4,13 +4,12 @@
  *
  */
 import React, { memo } from 'react';
-import Input from '@material-ui/core/Input';
 
 import CategorySelect from './CategorySelect';
 import { GhostButton, PrimaryButton } from '../base_ui/buttons';
 import {
   StyledInput,
-  StyledSection,
+  StyledForm,
   StyledInputLabel,
 } from './styledComponents';
 
@@ -18,13 +17,13 @@ import {
 
 function SearchForm() {
   return (
-    <StyledSection>
-      <StyledInputLabel htmlFor="">Search Vistas</StyledInputLabel>
+    <StyledForm>
+      <StyledInputLabel>Search Vistas</StyledInputLabel>
       <StyledInput color="primary" placeholder="Enter Keyword..." />
       <CategorySelect />
       <PrimaryButton>Search</PrimaryButton>
       <GhostButton>Browse</GhostButton>
-    </StyledSection>
+    </StyledForm>
   );
 }
 

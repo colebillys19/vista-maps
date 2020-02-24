@@ -12,11 +12,11 @@ import { DEFAULT_FONT_SIZE } from '../../../resources/styleConstants';
 type Props = ButtonProps;
 
 const StyledButton = styled(Button)`
-  padding: 0.4rem 3rem;
+  padding: 0.4rem 0;
   span { font-size: ${DEFAULT_FONT_SIZE}; }
   text-transform: none;
   margin: 1.3rem auto 0;
-  width: 15rem;
+  width: 13rem;
   height: 5.1rem;
 `;
 
