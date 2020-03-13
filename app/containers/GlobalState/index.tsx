@@ -27,7 +27,7 @@ function GlobalState() {
 
   const { globalState } = useSelector(stateSelector);
   const dispatch = useDispatch();
-  return <div></div>;
+  return  <div/>;
 }
 
 export default GlobalState;
