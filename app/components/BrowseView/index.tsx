@@ -1,6 +1,6 @@
 /**
  *
- * NotFoundPage
+ * BrowseView
  *
  */
 import React, { memo } from 'react';
@@ -9,8 +9,8 @@ import React, { memo } from 'react';
 
 // type Props {}
 
-function NotFoundPage() {
-  return <div>Page Not Found</div>;
+function BrowseView() {
+  return  <div/>;
 }
 
-export default memo(NotFoundPage);
+export default memo(BrowseView);

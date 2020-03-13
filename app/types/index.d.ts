@@ -3,7 +3,7 @@ import { RouterState } from 'connected-react-router';
 import { ContainerState as BrowseState } from 'containers/Browse/types';
 import { ContainerState as LandingState } from 'containers/Landing/types';
 import { ContainerState as LanguageProviderState } from 'containers/LanguageProvider/types';
-import { ContainerState as StoreState } from 'containers/Store/types';
+import { ContainerState as GlobalStateState } from 'containers/GlobalState/types';
 import { ContainerState as UserState } from 'containers/User/types';
 import { ContainerState as VistaState } from 'containers/Vista/types';
 
@@ -30,7 +30,7 @@ export interface ApplicationRootState {
   readonly landing: LandingState;
   readonly language: LanguageProviderState;
   readonly router: RouterState;
-  readonly store: StoreState;
+  readonly globalState: GlobalStateState;
   readonly user: UserState;
   readonly vista: VistaState;
   // for testing purposes

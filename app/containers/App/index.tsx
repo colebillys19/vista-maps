@@ -11,11 +11,11 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import muiTheme from 'resources/muiTheme';
 import Nav from 'components/Nav';
-import LandingPage from 'containers/Landing/Loadable';
-import BrowsePage from 'containers/Browse/Loadable';
-import VistaPage from 'containers/Vista/Loadable';
-import UserPage from 'containers/User/Loadable';
-import NotFoundPage from 'components/NotFoundPage';
+import LandingView from 'containers/Landing/Loadable';
+import BrowseView from 'containers/Browse/Loadable';
+import VistaView from 'containers/Vista/Loadable';
+import UserView from 'containers/User/Loadable';
+import NotFoundView from 'components/NotFoundView';
 import GlobalStyle from 'global-styles';
 
 export default function App() {
@@ -25,11 +25,11 @@ export default function App() {
       <ThemeProvider theme={muiTheme}>
         <Nav />
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/browse" component={BrowsePage} />
-          <Route exact path="/vista" component={VistaPage} />
-          <Route exact path="/user" component={UserPage} />
-          <Route component={NotFoundPage} />
+          <Route exact path="/" component={LandingView} />
+          <Route exact path="/browse" component={BrowseView} />
+          <Route exact path="/vista" component={VistaView} />
+          <Route exact path="/user" component={UserView} />
+          <Route component={NotFoundView} />
         </Switch>
         <GlobalStyle />
       </ThemeProvider>

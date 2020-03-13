@@ -1,6 +1,6 @@
 /**
  *
- * LandingPage
+ * LandingView
  *
  */
 import React, { memo } from 'react';
@@ -12,7 +12,7 @@ import { LandingWrapper } from './styledComponents';
 
 // type Props {}
 
-function LandingPage() {
+function LandingView() {
   return (
     <LandingWrapper>
       <Slideshow />
@@ -21,4 +21,4 @@ function LandingPage() {
   );
 }
 
-export default memo(LandingPage);
+export default memo(LandingView);

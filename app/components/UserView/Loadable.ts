@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for BrowsePage
+ * Asynchronously loads the component for UserView
  *
  */
 

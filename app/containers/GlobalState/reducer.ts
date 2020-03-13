@@ -1,6 +1,6 @@
 /*
  *
- * Store reducer
+ * GlobalState reducer
  *
  */
 
@@ -11,7 +11,7 @@ export const initialState: ContainerState = {
   default: null,
 };
 
-function storeReducer(
+function globalStateReducer(
   state: ContainerState = initialState,
   action: ContainerActions,
 ): ContainerState {
@@ -23,4 +23,4 @@ function storeReducer(
   }
 }
 
-export default storeReducer;
+export default globalStateReducer;

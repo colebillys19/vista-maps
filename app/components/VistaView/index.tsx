@@ -1,6 +1,6 @@
 /**
  *
- * BrowsePage
+ * VistaView
  *
  */
 import React, { memo } from 'react';
@@ -9,8 +9,8 @@ import React, { memo } from 'react';
 
 // type Props {}
 
-function BrowsePage() {
+function VistaView() {
   return  <div/>;
 }
 
-export default memo(BrowsePage);
+export default memo(VistaView);

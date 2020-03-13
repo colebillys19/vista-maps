@@ -1,6 +1,6 @@
 /*
  *
- * Store
+ * GlobalState
  *
  */
 
@@ -10,24 +10,24 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
-import makeSelectStore from './selectors';
+import makeSelectGlobalState from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
 const stateSelector = createStructuredSelector({
-  store: makeSelectStore(),
+  globalState: makeSelectGlobalState(),
 });
 
 // type Props {}
 
-function Store() {
+function GlobalState() {
   // Warning: Add your key to RootState in types/index.d.ts file
-  useInjectReducer({ key: 'store', reducer: reducer });
-  useInjectSaga({ key: 'store', saga: saga });
+  useInjectReducer({ key: 'globalState', reducer: reducer });
+  useInjectSaga({ key: 'globalState', saga: saga });
 
-  const { store } = useSelector(stateSelector);
+  const { globalState } = useSelector(stateSelector);
   const dispatch = useDispatch();
-  return  <div/>;
+  return <div></div>;
 }
 
-export default Store;
+export default GlobalState;

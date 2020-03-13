@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for VistaPage
+ * Asynchronously loads the component for LandingView
  *
  */
 

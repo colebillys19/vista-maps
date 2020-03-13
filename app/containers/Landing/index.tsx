@@ -15,7 +15,7 @@ import makeSelectLanding from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import LandingPage from 'components/LandingPage';
+import LandingView from 'components/LandingView';
 
 const stateSelector = createStructuredSelector({
   landing: makeSelectLanding(),
@@ -36,7 +36,7 @@ function Landing() {
         <title>Landing</title>
         <meta name="description" content="Description of Landing" />
       </Helmet>
-      <LandingPage />
+      <LandingView />
     </Fragment>
   );
 }

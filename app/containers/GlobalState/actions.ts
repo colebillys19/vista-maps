@@ -1,6 +1,6 @@
 /*
  *
- * Store actions
+ * GlobalState actions
  *
  */
 

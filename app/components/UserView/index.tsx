@@ -1,6 +1,6 @@
 /**
  *
- * VistaPage
+ * UserView
  *
  */
 import React, { memo } from 'react';
@@ -9,8 +9,8 @@ import React, { memo } from 'react';
 
 // type Props {}
 
-function VistaPage() {
+function UserView() {
   return  <div/>;
 }
 
-export default memo(VistaPage);
+export default memo(UserView);
