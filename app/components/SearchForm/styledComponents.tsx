@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
@@ -6,7 +7,15 @@ import InputLabel from '@material-ui/core/InputLabel';
 import muiTheme from '../../resources/muiTheme';
 import { PRIMARY_BACKGROUND } from '../../resources/styleConstants';
 
-export const CategoryButton = styled(Button)`
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+`;
+
+export const CategoryButton = styled((props) => (
+  <Button disableRipple {...props} />
+))`
   background-color: #e9e8f2 !important;
   border-bottom: 1px solid #86868b;
   display: flex;

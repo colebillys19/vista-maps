@@ -36,6 +36,7 @@ function UserMenu() {
         ref={anchorRef}
         aria-label="menu"
         color="inherit"
+        disableRipple
         onClick={handleToggle}
       >
         <AccountIcon />

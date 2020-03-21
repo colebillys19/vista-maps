@@ -8,6 +8,7 @@ import React, { memo } from 'react';
 import CategorySelect from './CategorySelect';
 import { GhostButton, PrimaryButton } from '../base_ui/buttons';
 import {
+  ButtonContainer,
   StyledInput,
   StyledForm,
   StyledInputLabel,
@@ -21,8 +22,10 @@ function SearchForm() {
       <StyledInputLabel>Search Vistas</StyledInputLabel>
       <StyledInput color="primary" placeholder="Enter Keyword..." />
       <CategorySelect />
-      <PrimaryButton>Search</PrimaryButton>
-      <GhostButton>Browse</GhostButton>
+      <ButtonContainer>
+        <PrimaryButton>Search</PrimaryButton>
+        <GhostButton>Browse</GhostButton>
+      </ButtonContainer>
     </StyledForm>
   );
 }
