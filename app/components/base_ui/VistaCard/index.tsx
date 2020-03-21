@@ -3,7 +3,7 @@
  * VistaCard
  *
  */
-import React, { memo } from 'react';
+import React from 'react';
 
 // import {
 //   Detail,
@@ -39,4 +39,4 @@ function VistaCard() {
   // );
 }
 
-export default memo(VistaCard);
+export default VistaCard;

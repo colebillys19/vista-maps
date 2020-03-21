@@ -3,7 +3,7 @@
  * GridList
  *
  */
-import React, { memo } from 'react';
+import React from 'react';
 
 // import styled from 'styles/styled-components';
 
@@ -13,4 +13,4 @@ function GridList() {
   return  <div/>;
 }
 
-export default memo(GridList);
+export default GridList;

@@ -5,9 +5,9 @@
  */
 import React, { memo } from 'react';
 
-import Slideshow from '../Slideshow/Loadable';
+import Slideshow from '../Slideshow';
 import SearchForm from '../SearchForm';
-// import VistaListLanding from '../VistaList/Landing/Loadable';
+import VistaListLanding from '../VistaListLanding';
 import { LandingWrapper } from './styledComponents';
 
 // type Props {}
@@ -17,6 +17,7 @@ function LandingView() {
     <LandingWrapper>
       <Slideshow />
       <SearchForm />
+      <VistaListLanding />
     </LandingWrapper>
   );
 }
