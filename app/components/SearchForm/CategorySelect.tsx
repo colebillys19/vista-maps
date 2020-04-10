@@ -9,7 +9,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import MenuOpen from '@material-ui/icons/MenuOpen';
+import Reorder from '@material-ui/icons/Reorder';
 import Modal from '@material-ui/core/Modal';
 
 
@@ -39,7 +39,7 @@ function CategorySelect() {
   return (
     <Fragment>
       <CategoryButton
-        endIcon={<MenuOpen />}
+        endIcon={<Reorder />}
         fullWidth
         onClick={handleToggle}
       >

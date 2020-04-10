@@ -6,7 +6,7 @@
 import React from 'react';
 // import styled from 'styles/styled-components';
 
-type Props = {};
+interface Props {}
 
 // const ListContainer = styled.div`
 //   display: flex;
@@ -19,6 +19,6 @@ function ColumnList() {
   // <ListContainer>
   //   {children}
   // </ListContainer>
-};
+}
 
 export default ColumnList;
