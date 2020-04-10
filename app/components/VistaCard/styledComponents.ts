@@ -19,7 +19,11 @@ export const Name = styled.div`
 export const StyledCard = styled(Card)`
   border: 0.3rem solid #333;
   border-radius: 1rem;
+  margin: 0 1rem 1rem;
   padding: 0;
+  :last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 export const StyledCardContent = styled(CardContent)`

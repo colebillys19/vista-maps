@@ -6,18 +6,15 @@
 import React, { memo } from 'react';
 
 import VistaCard from 'components/VistaCard';
-import ColumnList from 'components/base_ui/ColumnList';
+
+import { StyledColumnList } from './styledComponents';
+import mockData from './mockData';
 
 function VistaListLanding() {
   return (
-    <ColumnList>
-      <VistaCard
-        author="Billy"
-        imageUrl="https://res.cloudinary.com/dxklaorw6/image/upload/v1542642062/lktqn9nyu8vbnr93vyei.jpg"
-        name="Los Angeles"
-        rating="5"
-      />
-    </ColumnList>
+    <StyledColumnList>
+      {mockData.map((vista) => <VistaCard key={vista.imageUrl} {...vista} />)}
+    </StyledColumnList>
   );
 }
 

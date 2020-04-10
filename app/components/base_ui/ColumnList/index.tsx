@@ -12,9 +12,9 @@ const ListContainer = styled.div`
   width: 100%;
 `;
 
-function ColumnList({ children }) {
+function ColumnList({ children, className = '' }) {
   return (
-    <ListContainer>
+    <ListContainer className={className}>
       {children}
     </ListContainer>
   );

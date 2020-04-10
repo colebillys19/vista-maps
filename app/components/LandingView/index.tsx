@@ -5,8 +5,8 @@
  */
 import React, { memo } from 'react';
 
-// import Slideshow from '../Slideshow';
-// import SearchForm from '../SearchForm';
+import Slideshow from '../Slideshow';
+import SearchForm from '../SearchForm';
 import VistaList from '../VistaList';
 import { LandingWrapper } from './styledComponents';
 
@@ -15,6 +15,8 @@ import { LandingWrapper } from './styledComponents';
 function LandingView() {
   return (
     <LandingWrapper>
+      <Slideshow />
+      <SearchForm />
       <VistaList />
     </LandingWrapper>
   );

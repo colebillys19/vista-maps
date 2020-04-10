@@ -16,7 +16,7 @@ export const ButtonContainer = styled.div`
 export const CategoryButton = styled((props) => (
   <Button disableRipple {...props} />
 ))`
-  background-color: #e9e8f2 !important;
+  background-color: #e9e8f2;
   border-bottom: 1px solid #86868b;
   display: flex;
   height: 5.1rem;
@@ -24,8 +24,11 @@ export const CategoryButton = styled((props) => (
   letter-spacing: normal;
   padding: 0 1.2rem;
   text-transform: none;
-  & svg {
-    font-size: 3.5rem !important;
+  &.MuiButton-root {
+    background-color: #e9e8f2;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 3.5rem;
   }
 `;
 
