@@ -19,12 +19,14 @@ export const Name = styled.div`
 export const StyledCard = styled(Card)`
   border: 0.3rem solid #333;
   border-radius: 1rem;
-  margin: 0 2.4rem 2.4rem;
   padding: 0;
 `;
 
 export const StyledCardContent = styled(CardContent)`
-  padding: 1.2rem 1.2rem 2.4rem !important;
+  padding: 1.2rem;
+  &.MuiCardContent-root {
+    padding-bottom: 2.4rem;
+  }
 `;
 
 export const StyledCardMedia = styled(CardMedia)`

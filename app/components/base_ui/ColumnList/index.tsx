@@ -4,21 +4,20 @@
  *
  */
 import React from 'react';
-// import styled from 'styles/styled-components';
+import styled from 'styles/styled-components';
 
-interface Props {}
+const ListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 
-// const ListContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   outline: 1px solid green;
-// `;
-
-function ColumnList() {
-  return <div />;
-  // <ListContainer>
-  //   {children}
-  // </ListContainer>
+function ColumnList({ children }) {
+  return (
+    <ListContainer>
+      {children}
+    </ListContainer>
+  );
 }
 
 export default ColumnList;

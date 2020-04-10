@@ -5,18 +5,20 @@
  */
 import React, { memo } from 'react';
 
-// import ColumnList from 'components/base_ui/ColumnList';
-// import VistaCard from 'components/base_ui/VistaCard';
-
-// type Props {}
+import VistaCard from 'components/VistaCard';
+import ColumnList from 'components/base_ui/ColumnList';
 
 function VistaListLanding() {
-  return <div>hello</div>;
-  // return (
-  //   <ColumnList>
-  //     <VistaCard />
-  //   </ColumnList>
-  // );
+  return (
+    <ColumnList>
+      <VistaCard
+        author="Billy"
+        imageUrl="https://res.cloudinary.com/dxklaorw6/image/upload/v1542642062/lktqn9nyu8vbnr93vyei.jpg"
+        name="Los Angeles"
+        rating="5"
+      />
+    </ColumnList>
+  );
 }
 
 export default memo(VistaListLanding);
