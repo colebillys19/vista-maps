@@ -11,7 +11,7 @@ import React, { memo } from 'react';
 // type Props {}
 
 function VistaListLanding() {
-  return <div />;
+  return <div>hello</div>;
   // return (
   //   <ColumnList>
   //     <VistaCard />

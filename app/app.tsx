@@ -1,26 +1,17 @@
-/**
- * app.js
- *
- * This is the entry file for the application, only setup and boilerplate
- * code.
- */
-
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
-// Import all the third party stuff
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import FontFaceObserver from 'fontfaceobserver';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
+import { StylesProvider } from '@material-ui/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-// Import root app
 import App from 'containers/App';
-
-// Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon and the .htaccess file
@@ -29,8 +20,9 @@ import 'file-loader?name=.htaccess!./.htaccess';
 
 import configureStore from './configureStore';
 
-// Import i18n messages
 import { translationMessages } from 'i18n';
+
+import muiTheme from 'resources/muiTheme';
 
 // Observe loading of Lato (to remove lato, remove the <link> tag in
 // the index.html file and this observer)
@@ -52,7 +44,11 @@ const render = (messages: any, Component = App) => {
     <Provider store={store}>
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
-          <Component />
+          <StylesProvider injectFirst>
+            <ThemeProvider theme={muiTheme}>
+              <Component />
+            </ThemeProvider>
+          </StylesProvider>
         </ConnectedRouter>
       </LanguageProvider>
     </Provider>,
