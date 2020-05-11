@@ -7,7 +7,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button, { ButtonProps } from '@material-ui/core/Button';
 
-import { DEFAULT_FONT_SIZE } from '../../../resources/styleConstants';
+import { DEFAULT_FONT_SIZE } from '../../../styleConstants';
 
 type Props = ButtonProps;
 

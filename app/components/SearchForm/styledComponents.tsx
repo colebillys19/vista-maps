@@ -4,8 +4,8 @@ import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
 import InputLabel from '@material-ui/core/InputLabel';
 
-import muiTheme from '../../resources/muiTheme';
-import { PRIMARY_BACKGROUND } from '../../resources/styleConstants';
+import muiTheme from '../../muiTheme';
+import { LIGHT_PURPLE, PRIMARY_BACKGROUND } from '../../styleConstants';
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export const ButtonContainer = styled.div`
 export const CategoryButton = styled((props) => (
   <Button disableRipple {...props} />
 ))`
-  background-color: #e9e8f2;
+  background-color: ${LIGHT_PURPLE};
   border-bottom: 1px solid #86868b;
   display: flex;
   height: 5.1rem;

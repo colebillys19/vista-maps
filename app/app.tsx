@@ -22,7 +22,7 @@ import configureStore from './configureStore';
 
 import { translationMessages } from 'i18n';
 
-import muiTheme from 'resources/muiTheme';
+import muiTheme from 'muiTheme';
 
 // Observe loading of Lato (to remove lato, remove the <link> tag in
 // the index.html file and this observer)
